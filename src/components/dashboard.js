@@ -29,7 +29,7 @@ function Dashboard() {
 
   const getData = () => {
     axios
-      .get("https://nitmun-xii-backend.onrender.com/api/dashboard")
+      .get("https://nitmun-xiii-backend.onrender.com/api/dashboard")
       .then((response) => response.data)
       .then((data) => {
         // console.log(data[1].name);
@@ -55,7 +55,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/updatecommittee/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/updatecommittee/${user._id}`, {
           committeeAlloted: committeeAlloted,
         })
         .then((res) => {
@@ -66,7 +66,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/updateportfolio/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/updateportfolio/${user._id}`, {
           portfolioAlloted: portfolioAlloted,
         })
         .then((res) => {
@@ -77,7 +77,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/allotmentmail/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/allotmentmail/${user._id}`, {
           Allotedmail:true,  
         })
         .then((res) => {
@@ -89,7 +89,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/updatepaid/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/updatepaid/${user._id}`, {
           paid: true,  
         })
         .then((res) => {
@@ -101,7 +101,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/paymentmail/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/paymentmail/${user._id}`, {
           paid: true,  
         })
         .then((res) => {
@@ -114,7 +114,7 @@ function Dashboard() {
       e.preventDefault();
 
       await axios
-        .post(`https://nitmun-xii-backend.onrender.com/api/payments/${user._id}`, {
+        .post(`https://nitmun-xiii-backend.onrender.com/api/payments/${user._id}`, {
         paidto : paidto,
         amount : amount
         })
